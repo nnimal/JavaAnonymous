@@ -1,0 +1,23 @@
+Thread th = new Thread( new Runnable(){
+//runnable is @functional abstract interface
+@override 
+public void run(){
+system.out.println("Run With anoymous");
+
+}
+
+};
+);
+
+Called 
+
+th.start();
+
+// with lamda
+
+Thread th1= new Thread(()->{
+system.out.println("Run With Lamda");
+});
+
+//call 
+th1.start();
